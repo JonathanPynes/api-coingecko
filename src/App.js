@@ -29,7 +29,7 @@ useEffect(() => {
 useEffect(() => {
     console.log("Input inside UseEffect: ", input, adaPrice)
     if (adaPrice.cardano?.usd) {
-setDollars(adaPrice.cardano.usd * input)
+setDollars((adaPrice.cardano.usd * input).toFixed(2))
 }
 
     
